@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Compteur de mots</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Compteur de mots</h1>
+        <p>Bienvenue! Entrez vos informations et votre texte, puis cliquez sur "Compter".</p>
+    </header>
+
+    <div id="formulaire">
+        <form id="informations">
+            <div>
+                <label for="nom">Votre nom:</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom...">
+            </div>
+
+            <div>
+                <label for="email">Votre email:</label>
+                <input type="email" id="email" name="email" placeholder="Votre email...">
+            </div>
+
+            <div>
+                <label for="texte">Entrez votre texte:</label>
+                <textarea id="texte" name="texte" placeholder="Votre texte..."></textarea>
+            </div>
+
+            <div>
+                <button type="button" id="submit" name="submit">Compter</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="resultat"></div>
+</body>
+<script src="script.js"></script>
+</html>
