@@ -12,30 +12,46 @@
         <p>Bienvenue! Entrez vos informations et votre texte, puis cliquez sur "Compter".</p>
     </header>
 
-    <div id="formulaire">
+    <div id="formulaire-mots">
         <form id="informations">
             <div>
-                <label for="nom">Votre nom:</label>
-                <input type="text" id="nom" name="nom" placeholder="Votre nom...">
-            </div>
-
-            <div>
-                <label for="email">Votre email:</label>
-                <input type="email" id="email" name="email" placeholder="Votre email...">
+                <label for="nom1">Votre nom:</label>
+                <input type="text" id="nom1" name="nom" placeholder="Votre nom...">
             </div>
 
             <div>
                 <label for="texte">Entrez votre texte:</label>
-                <textarea id="texte" name="texte" placeholder="Votre texte..."></textarea>
+                <textarea id="texte1" name="texte" placeholder="Votre texte..."></textarea>
             </div>
 
             <div>
-                <button type="button" id="submit" name="submit">Compter</button>
+                <button type="button" id="submit-words" name="submit-words">Compter</button>
             </div>
         </form>
     </div>
 
-    <div id="resultat"></div>
+    <div id="resultat-mots"></div>
+
+    <div id="formulaire-lettres">
+        <form id="informations2">
+            <div>
+                <label for="nom">Votre nom:</label>
+                <input type="text" id="nom2" name="nom" placeholder="Votre nom...">
+            </div>
+
+            <div>
+                <label for="texte">Entrez votre texte:</label>
+                <textarea id="texte2" name="texte" placeholder="Votre texte..."></textarea>
+            </div>
+
+            <div>
+                <button type="button" id="submit-letters" name="submit-letters">Compter</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="resultat-lettres"></div>
+
 </body>
 <script src="script.js"></script>
 </html>
