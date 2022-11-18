@@ -11,9 +11,8 @@ function wordCount() {
     let words = texte.split(" ").length;
 
     //Message indiquant le nombre de mots à l'utilisateur
-    let message = document.createElement("h2");
-    message.textContent = `Bonjour ${nom}, votre texte contient ${words} mot(s) :)`;
-    resultatMots.appendChild(message);
+    let message = `Bonjour ${nom}, votre texte contient ${words} mot(s) :)`;
+    resultatMots.textContent = message;
 }
 
 //Fonction de décompte des lettres
@@ -28,11 +27,9 @@ function letterCount() {
     //Découpage des mots pour les compter
     let letters = texte.split("").length;
 
-    //Message indiquant le nombre de mots à l'utilisateur
-    let message = document.createElement("h2");
-    message.textContent = `Bonjour ${nom}, votre texte contient ${letters} lettre(s) :)`;
-    resultat.appendChild(message);
-    messageOrNot = true;
+    //Message indiquant le nombre de lettres à l'utilisateur
+    let message = `Bonjour ${nom}, votre texte contient ${letters} lettre(s) :)`;
+    resultat.textContent = message;
 }
 
 //Récupération des boutons
